@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration:</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="main" >
+    <div class="second"> 
+      <form id="form" onclick="checkgloble()">
+        
+        <h1 >Registration form</h1>
+      
+       
+    
+        <div class="row">
+                  
+                    <div class="col1">   <label for="fname" >First Name:</label> </div>
+                    <div class="col2"> <input type="text"class="needed"  onkeyup="check1(this)" id="fname" name="fname" placeholder=""></div>
+                  <br>
+                   </div>
+                   <div class="row">
+                    <div class="col1"> <td><label for="lname">Last Name:</label></div>
+                    <div class="col2"><td> <input type="text" class="needed" onkeyup="check2(this)" id="lname" name="lname" placeholder=""> </td></div>
+             </div>
+       
+           
+       
+             <div class="row" ><tr>
+                    <div class="col1"> <label for="dob">Date-o-Birth:</label></div>
+                    <div class="col2"> <input type="date" class="needed" onkeyup="check3(this)"  id="dob" name="dob"></div>
+                  
+            </div>
+            <div class="row">
+                    <div class="col1"> <label for="email">Email:</label></div>
+                    <div class="col2"><input type="text"   id="email" name="email" onkeyup="check4(this)" placeholder=""><br></td></div>
+            </div> </tr>
+            <div class="row"><tr>
+                    <div class="col1"> <label for="password">Password:</label></div>
+                    <div class="col2"> <input type="password" class="needed" id="password" onkeyup="check5(this)" name="password" placeholder=""></div>
+                    </div>
+             <div class="row">
+                  
+                        <div class="col1">   <label for="mobile" >Number:</label> </div>
+                        <div class="col2"> <input type="text"  class="needed" id="mobile" onkeyup="check6(this)" name="mobile" ></div>
+                      <br>
+             </div>
+             
+                      
+             <div class="row">
+                    <div class="col1"><label for="address">Address:</label></div>
+                    <div class="col2"><input type="text" name="address"  class="needed" onkeyup="check7(this)"  id="address" rows="1" cols="20" placeholder=""></div>
+             </div>
+
+            <div class="row">
+                    <div class="col1"> <label for="language"> Skills:</label></div>
+                        <div class="col2"><select name="laguage"    placeholder="Select" id="language" >
+                         <option value="no">select</option>
+                         <option value="html">HTML</option>
+                         <option value="css">CSS</option>
+                         <option value="javascript">JAVASCRIPT</option></select></div>
+                 <br>
+            </div>       
+     
+            <div class="row">
+                <div class="col1"><label for="address">Gender</label></div>
+                <div class="col2"><input type="radio" class="gender" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                  <input type="radio" class="gender" id="Famale" name="gender" value="female">
+                  <label for="Famale">Famale</label></div>
+                      
+            </div>
+        <div class="row" >   
+               <div class="col1" > <button type="reset"  id="btn3" >reset</div>
+               <div class="col2" ><button type="submit"  id="btn">submit</button></div>
+             </div>
+             <div id="message" style="color: rgb(230, 28, 28);margin: 10px auto 10px;" ></div>
+             <div id="message1" style="color: rgb(230, 28, 28);margin:  auto 10px;"></div>
+       </form>
+    </div>
+   <div></div>
+       <div> <button id="btn2"  >show-records</button></div>
+       <table border="1" class="show" ></table>
+     </div>
+  
+
+    <script src="/small_project/script.js"></script>
+   
+</body>
+</html>
